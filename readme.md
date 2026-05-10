@@ -1,34 +1,50 @@
+<div align="center">
+
 # ✋ Hand Gesture Volume Control
 
-Control your system volume using just your hand gestures in real time using **Computer Vision**, **MediaPipe**, and **OpenCV**.
+### Control Your System Volume Using Hand Gestures in Real-Time
 
-This project tracks the distance between your **thumb** and **index finger** through a webcam and maps it to your system volume level.
+<img src="./public/demo/demo.png" width="800"/>
+
+</div>
+
+---
+
+## 🚀 Overview
+
+This project allows you to control your system volume using only your hand gestures through a webcam.
+
+Using **MediaPipe Hand Tracking**, the distance between your **thumb** and **index finger** is detected and mapped directly to your system's volume level.
+
+---
+
+## ✨ Features
+
+- 🎥 Real-time webcam hand tracking
+- ✋ Gesture-based volume control
+- 🔊 Smooth volume adjustment
+- 📊 Animated volume bar UI
+- ⚡ Real-time performance
+- 🖥️ Windows system volume integration
+- 🤏 Pinch gesture detection
+
+---
 
 ## 📸 Demo
 
-### Live Hand Tracking
+### Hand Tracking Detection
 
-![Demo Image](public/demo/demo.png)
-
----
-
-### Volume Gesture Detection
-
-![Demo Image 2](public/demo/demo2.png)
----
-
-## 🚀 Features
-
-- 🎥 Real-time webcam hand tracking
-- ✋ Thumb & index finger gesture detection
-- 🔊 System volume control using gestures
-- 📊 Smooth animated volume bar
-- ⚡ Fast and responsive performance
-- 🖥️ Works on Windows systems
+<img src="./public/demo/demo.png" width="700"/>
 
 ---
 
-## 🛠️ Technologies Used
+### Gesture Volume Control
+
+<img src="./public/demo/demo2.png" width="700"/>
+
+---
+
+## 🛠️ Tech Stack
 
 - Python
 - OpenCV
@@ -39,48 +55,33 @@ This project tracks the distance between your **thumb** and **index finger** thr
 
 ---
 
-## 📦 Requirements
-
-Create a `requirements.txt` file:
-
-```txt
-opencv-python
-mediapipe
-numpy
-pycaw
-comtypes
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```bash
 Hand-Gesture-Volume-Control/
 │
-├── main.py
-├── hand_landmarker.task
+├── app.py
 ├── requirements.txt
-└── README.md
+├── hand_landmarker.task
+├── README.md
+│
+└── public/
+    └── demo/
+        ├── demo.png
+        └── demo2.png
 ```
 
 ---
 
-## ▶️ How to Run
+## ⚙️ Installation
 
-### 1️⃣ Clone the Repository
+### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/your-username/Hand-Gesture-Volume-Control.git
+git clone https://github.com/harshdwivediiiii/Hand-Gesture-Volume-Control.git
 ```
 
-### 2️⃣ Navigate to Project Folder
+### 2️⃣ Move into Folder
 
 ```bash
 cd Hand-Gesture-Volume-Control
@@ -92,17 +93,21 @@ cd Hand-Gesture-Volume-Control
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Download MediaPipe Model
+---
 
-Download:
+## 📦 Requirements
 
-`hand_landmarker.task`
-
-Place it inside the project folder.
+```txt
+opencv-python
+mediapipe
+numpy
+pycaw
+comtypes
+```
 
 ---
 
-## ▶️ Start the Project
+## ▶️ Run the Project
 
 ```bash
 python main.py
@@ -114,54 +119,46 @@ python main.py
 
 | Gesture | Action |
 |----------|---------|
-| 🤏 Fingers close | Volume Down |
-| ✋ Fingers apart | Volume Up |
-| ESC Key | Exit Program |
+| 🤏 Fingers Close | Volume Down |
+| ✋ Fingers Apart | Volume Up |
+| ESC Key | Exit Application |
 
 ---
 
-## 📸 How It Works
+## 🧠 How It Works
 
 1. Webcam captures live video
 2. MediaPipe detects hand landmarks
-3. Distance between thumb & index finger is calculated
-4. Distance maps to system volume
-5. Volume updates smoothly in real time
+3. Thumb & index finger positions are tracked
+4. Distance between fingers is calculated
+5. Distance maps to system volume
+6. Volume changes smoothly in real time
 
 ---
 
-## 🧠 Concepts Used
+## 🔥 Concepts Used
 
 - Hand Landmark Detection
-- Euclidean Distance
 - Gesture Recognition
+- Euclidean Distance Calculation
+- Real-Time Computer Vision
 - Volume Mapping
-- Real-Time Image Processing
 
 ---
 
-## ⚡ Future Improvements
+## 🚀 Future Improvements
 
 - 🖐️ Multi-hand support
-- 🎵 Media controls (pause/play)
-- 🌙 Dark futuristic UI
-- 📱 Bluetooth phone camera support
-- 🤖 AI gesture customization
-
----
-
-## 🖥️ Output Preview
-
-```text
-Pinch = Volume Control
-ESC = Quit
-```
+- 🎵 Media player controls
+- 🌙 Futuristic UI
+- 📱 Mobile camera support
+- 🤖 Custom gesture commands
 
 ---
 
 ## 👨‍💻 Author
 
-Harshvardhan Dwivedi
+### Harshvardhan Dwivedi
 
 ---
 
@@ -169,12 +166,12 @@ Harshvardhan Dwivedi
 
 If you liked this project:
 
-- Star the repository
-- Fork the project
-- Share with friends
+- ⭐ Star the repository
+- 🍴 Fork the project
+- 📢 Share it with others
 
 ---
 
 ## 📜 License
 
-This project is open-source and available under the MIT License.
+This project is licensed under the MIT License.
