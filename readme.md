@@ -110,7 +110,7 @@ comtypes
 ## ▶️ Run the Project
 
 ```bash
-python main.py
+python app.py
 ```
 
 ---
